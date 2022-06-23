@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf5cf521-14e1-4acf-adea-9ba8c73e8833" name="Changes" comment="initial commit">
+    <list default="true" id="bf5cf521-14e1-4acf-adea-9ba8c73e8833" name="Changes" comment="initializer has been added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Radio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RadioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +46,7 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
+      <command value="mvn clean verify" />
     </option>
   </component>
   <component name="RunManager" selected="JUnit.RadioTest">
@@ -56,41 +59,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldIncreaseSoundVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldDecreaseSoundVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-automation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldIncreaseSoundVolume" />
+      <option name="METHOD_NAME" value="shouldDecreaseSoundVolume" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNotIncreaseSoundVolumeAboveMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldNotDecreaseSoundVolumeBelowMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-automation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldNotIncreaseSoundVolumeAboveMax" />
+      <option name="METHOD_NAME" value="shouldNotDecreaseSoundVolumeBelowMin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNotSDecreaseSoundVolumeBelowMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldSetNextRadioStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-automation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldNotSDecreaseSoundVolumeBelowMin" />
+      <option name="METHOD_NAME" value="shouldSetNextRadioStation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNotSetRadioStationAboveMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldSetPrevBorderRadioStationBelowMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-automation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldNotSetRadioStationAboveMax" />
+      <option name="METHOD_NAME" value="shouldSetPrevBorderRadioStationBelowMin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,10 +102,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RadioTest" />
-        <item itemvalue="JUnit.RadioTest.shouldNotSDecreaseSoundVolumeBelowMin" />
-        <item itemvalue="JUnit.RadioTest.shouldNotIncreaseSoundVolumeAboveMax" />
-        <item itemvalue="JUnit.RadioTest.shouldIncreaseSoundVolume" />
-        <item itemvalue="JUnit.RadioTest.shouldNotSetRadioStationAboveMax" />
+        <item itemvalue="JUnit.RadioTest.shouldNotDecreaseSoundVolumeBelowMin" />
+        <item itemvalue="JUnit.RadioTest.shouldDecreaseSoundVolume" />
+        <item itemvalue="JUnit.RadioTest.shouldSetNextRadioStation" />
+        <item itemvalue="JUnit.RadioTest.shouldSetPrevBorderRadioStationBelowMin" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655936341189</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initializer has been added">
+      <created>1655968666732</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655968666732</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +148,33 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="initializer has been added" />
+    <option name="LAST_COMMIT_MESSAGE" value="initializer has been added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/RadioTest.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/RadioTest.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/RadioTest.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/RadioTest.java</url>
+          <line>185</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
