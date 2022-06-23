@@ -2,10 +2,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
+    Radio receiver = new Radio();
+    Radio vol = new Radio();
 
     @Test
     public void shouldSetRadioStation() {
-        Radio receiver = new Radio();
 
         receiver.setCurrentRadioStationNumber(5);
 
@@ -17,7 +18,6 @@ public class RadioTest {
 
     @Test
     public void shouldSetSoundVolume() {
-        Radio vol = new Radio();
 
         vol.setSoundVolume(5);
 
@@ -29,7 +29,6 @@ public class RadioTest {
 
     @Test
     public void shouldNotSetRadioStationAboveMax() {
-        Radio receiver = new Radio();
 
         receiver.setCurrentRadioStationNumber(12);
 
@@ -41,7 +40,6 @@ public class RadioTest {
 
     @Test
     public void shouldNotSetRadioStationBelowMin() {
-        Radio receiver = new Radio();
 
         receiver.setCurrentRadioStationNumber(-3);
 
@@ -53,7 +51,6 @@ public class RadioTest {
 
     @Test
     public void shouldSetNextRadioStation() {
-        Radio receiver = new Radio();
 
         receiver.setCurrentRadioStationNumber(4);
         receiver.next();
@@ -66,7 +63,6 @@ public class RadioTest {
 
     @Test
     public void shouldSetPrevRadioStation() {
-        Radio receiver = new Radio();
 
         receiver.setCurrentRadioStationNumber(5);
         receiver.prev();
@@ -79,7 +75,6 @@ public class RadioTest {
 
     @Test
     public void shouldNotSetNextRadioStationAboveMax() {
-        Radio receiver = new Radio();
 
         receiver.setCurrentRadioStationNumber(9);
         receiver.next();
@@ -92,7 +87,6 @@ public class RadioTest {
 
     @Test
     public void shouldNotSetPrevRadioStationBelowMin() {
-        Radio receiver = new Radio();
 
         receiver.setCurrentRadioStationNumber(0);
         receiver.prev();
@@ -105,7 +99,6 @@ public class RadioTest {
 
     @Test
     public void shouldNotSetSoundVolumeAboveMax() {
-        Radio vol = new Radio();
 
         vol.setSoundVolume(12);
 
@@ -117,7 +110,6 @@ public class RadioTest {
 
     @Test
     public void shouldNotSetSoundVolumeBelowMin() {
-        Radio vol = new Radio();
 
         vol.setSoundVolume(-3);
 
@@ -129,7 +121,6 @@ public class RadioTest {
 
     @Test
     public void shouldIncreaseSoundVolume() {
-        Radio vol = new Radio();
 
         vol.setSoundVolume(4);
         vol.increase();
@@ -142,7 +133,6 @@ public class RadioTest {
 
     @Test
     public void shouldDecreaseSoundVolume() {
-        Radio vol = new Radio();
 
         vol.setSoundVolume(5);
         vol.decrease();
@@ -155,7 +145,6 @@ public class RadioTest {
 
     @Test
     public void shouldNotIncreaseSoundVolumeAboveMax() {
-        Radio vol = new Radio();
 
         vol.setSoundVolume(10);
         vol.increase();
@@ -168,7 +157,6 @@ public class RadioTest {
 
     @Test
     public void shouldNotSDecreaseSoundVolumeBelowMin() {
-        Radio vol = new Radio();
 
         vol.setSoundVolume(0);
         vol.decrease();
