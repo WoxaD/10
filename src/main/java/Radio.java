@@ -2,9 +2,11 @@ public class Radio {
     private int currentRadioStationNumber;
     private int soundVolume;
     private final int maxStation;
+    private int maxVolume;
 
     public Radio() {
         maxStation = 10;
+        maxVolume = 100;
     }
 
     public Radio(int stationCount) {
@@ -32,7 +34,7 @@ public class Radio {
     public void setSoundVolume(int boardedSoundVolume) {
         if (boardedSoundVolume < 0) {
             soundVolume = 0;
-        } else if (boardedSoundVolume > 10) {
+        } else if (boardedSoundVolume > maxVolume) {
             soundVolume = 0;
         } else soundVolume = boardedSoundVolume;
     }
@@ -54,18 +56,14 @@ public class Radio {
     }
 
     public void increase() {
-        if (soundVolume < 10) {
+        if (soundVolume < maxVolume) {
             soundVolume++;
-        } else {
-            soundVolume = 0;
         }
     }
 
     public void decrease() {
         if (soundVolume > 0) {
             soundVolume--;
-        } else {
-            soundVolume = 10;
         }
     }
 }
