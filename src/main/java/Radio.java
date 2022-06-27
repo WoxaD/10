@@ -1,10 +1,10 @@
 public class Radio {
     private int currentRadioStationNumber;
     private int soundVolume;
-    private int maxStation;
+    private final int maxStation;
 
     public Radio() {
-        maxStation = 9;
+        maxStation = 10;
     }
 
     public Radio(int stationCount) {
