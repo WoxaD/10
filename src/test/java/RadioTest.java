@@ -86,18 +86,6 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldNotSetNextIncorrectRadioStationAboveMax() {
-
-        receiver.setCurrentRadioStationNumber(10);
-        receiver.next();
-
-        int expected = 0;
-        int actual = receiver.getCurrentRadioStationNumber();
-
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
     public void shouldNotSetPrevRadioStationBelowMin() {
 
         receiver.setCurrentRadioStationNumber(0);
@@ -159,18 +147,6 @@ public class RadioTest {
     public void shouldNotIncreaseSoundVolumeAboveMax() {
 
         vol.setSoundVolume(10);
-        vol.increase();
-
-        int expected = 0;
-        int actual = vol.getSoundVolume();
-
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
-    public void shouldNotIncreaseIncorrectSoundVolumeAboveMax() {
-
-        vol.setSoundVolume(11);
         vol.increase();
 
         int expected = 0;
