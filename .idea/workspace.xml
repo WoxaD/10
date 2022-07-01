@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf5cf521-14e1-4acf-adea-9ba8c73e8833" name="Changes" comment="constructor added">
+    <list default="true" id="bf5cf521-14e1-4acf-adea-9ba8c73e8833" name="Changes" comment="constructor for volume was added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Radio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RadioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,41 +57,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNotSetRadioStationAboveMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldDecreaseSoundVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-automation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldNotSetRadioStationAboveMax" />
+      <option name="METHOD_NAME" value="shouldDecreaseSoundVolume" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNotSetRadioStationBelowMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldIncreaseSoundVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-automation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldNotSetRadioStationBelowMin" />
+      <option name="METHOD_NAME" value="shouldIncreaseSoundVolume" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldSetSoundVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldNotSetSoundVolumeAboveMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-automation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldSetSoundVolume" />
+      <option name="METHOD_NAME" value="shouldNotSetSoundVolumeAboveMax" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldNotSetSoundVolumeBelowMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-automation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="shouldNotSetSoundVolumeBelowMin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,10 +100,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RadioTest" />
-        <item itemvalue="JUnit.RadioTest.shouldNotSetRadioStationBelowMin" />
-        <item itemvalue="JUnit.RadioTest.shouldNotSetRadioStationAboveMax" />
-        <item itemvalue="JUnit.RadioTest.shouldSetSoundVolume" />
-        <item itemvalue="JUnit.RadioTest.test" />
+        <item itemvalue="JUnit.RadioTest.shouldDecreaseSoundVolume" />
+        <item itemvalue="JUnit.RadioTest.shouldIncreaseSoundVolume" />
+        <item itemvalue="JUnit.RadioTest.shouldNotSetSoundVolumeBelowMin" />
+        <item itemvalue="JUnit.RadioTest.shouldNotSetSoundVolumeAboveMax" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656354850264</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="constructor for volume was added">
+      <created>1656355512613</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656355512613</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +185,7 @@
     <MESSAGE value="bugs have been corrected" />
     <MESSAGE value="100% coverage" />
     <MESSAGE value="constructor added" />
-    <option name="LAST_COMMIT_MESSAGE" value="constructor added" />
+    <MESSAGE value="constructor for volume was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="constructor for volume was added" />
   </component>
 </project>
