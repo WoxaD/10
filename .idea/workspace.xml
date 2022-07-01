@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf5cf521-14e1-4acf-adea-9ba8c73e8833" name="Changes" comment="bugs have been corrected">
+    <list default="true" id="bf5cf521-14e1-4acf-adea-9ba8c73e8833" name="Changes" comment="constructor for volume was added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Radio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RadioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,31 +67,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNotDecreaseSoundVolumeBelowMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldIncreaseSoundVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-automation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldNotDecreaseSoundVolumeBelowMin" />
+      <option name="METHOD_NAME" value="shouldIncreaseSoundVolume" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldSetNextRadioStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldNotSetSoundVolumeAboveMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-automation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldSetNextRadioStation" />
+      <option name="METHOD_NAME" value="shouldNotSetSoundVolumeAboveMax" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldSetPrevBorderRadioStationBelowMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldNotSetSoundVolumeBelowMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-automation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldSetPrevBorderRadioStationBelowMin" />
+      <option name="METHOD_NAME" value="shouldNotSetSoundVolumeBelowMin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,10 +100,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RadioTest" />
-        <item itemvalue="JUnit.RadioTest.shouldNotDecreaseSoundVolumeBelowMin" />
         <item itemvalue="JUnit.RadioTest.shouldDecreaseSoundVolume" />
-        <item itemvalue="JUnit.RadioTest.shouldSetNextRadioStation" />
-        <item itemvalue="JUnit.RadioTest.shouldSetPrevBorderRadioStationBelowMin" />
+        <item itemvalue="JUnit.RadioTest.shouldIncreaseSoundVolume" />
+        <item itemvalue="JUnit.RadioTest.shouldNotSetSoundVolumeBelowMin" />
+        <item itemvalue="JUnit.RadioTest.shouldNotSetSoundVolumeAboveMax" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +137,35 @@
       <option name="project" value="LOCAL" />
       <updated>1656012599318</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="100% coverage">
+      <created>1656350957393</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656350957396</updated>
+    </task>
+    <task id="LOCAL-00005" summary="100% coverage">
+      <created>1656352330441</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656352330441</updated>
+    </task>
+    <task id="LOCAL-00006" summary="constructor added">
+      <created>1656354850264</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656354850264</updated>
+    </task>
+    <task id="LOCAL-00007" summary="constructor for volume was added">
+      <created>1656355512613</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656355512613</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,22 +183,9 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="initializer has been added" />
     <MESSAGE value="bugs have been corrected" />
-    <option name="LAST_COMMIT_MESSAGE" value="bugs have been corrected" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/RadioTest.java</url>
-          <line>137</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/RadioTest.java</url>
-          <line>161</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="100% coverage" />
+    <MESSAGE value="constructor added" />
+    <MESSAGE value="constructor for volume was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="constructor for volume was added" />
   </component>
 </project>
